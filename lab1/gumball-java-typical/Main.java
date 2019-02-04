@@ -16,7 +16,14 @@ public class Main {
 
 		gumballMachine_2.insertCoin( 25 );
 		gumballMachine_2.turnCrank();
+		gumballMachine_2.insertCoin( 25 );
+		gumballMachine_2.insertCoin( 10 );
+		gumballMachine_2.turnCrank();
+		
+		gumballMachine_3.insertCoin( 10 );
+		gumballMachine_3.insertCoin( 10 );
 		gumballMachine_3.insertCoin( 25 );
+		gumballMachine_3.insertCoin( 5 );
 		gumballMachine_3.turnCrank();
 
 		//System.out.println(gumballMachine);
