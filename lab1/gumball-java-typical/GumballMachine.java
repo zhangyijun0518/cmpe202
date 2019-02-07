@@ -1,19 +1,20 @@
+import java.util.ArrayList;
 public class GumballMachine
 {
 
     private int num_gumballs;
-    private int cost_gumballs;
+    private int price_gumballs;
     private boolean all_quarters;
-    private Arraylist has_coins = new ArrayList();
+    private ArrayList<Integer> has_coins = new ArrayList<Integer>();
     private boolean accept_coin;
 
     public GumballMachine( int size, int price, boolean type )
     {
         // initialise instance variables
         this.num_gumballs = size;
-        this.cost_gumballs = price;
+        this.price_gumballs = price;
         this.accept_coin = type; 
-        this.all_quarters = true;
+        this.all_quarters = true; 
     }
 
     public void insertCoin( int coin )
@@ -27,17 +28,21 @@ public class GumballMachine
     }
     
     public void turnCrank()
-    {
-    	if ( this.has_coins.sum() < this.cost_gumballs ) //array not empty
+    {   int sum = 0;
+        for(int i = 0; i < has_coins.size();i++){
+            sum = sum + has_coins.get(i);
+        }
+        
+    	if ( sum >= this.price_gumballs ) 
     	{
     	    if(accept_coin || all_quarters)
     	    {
     		if ( this.num_gumballs > 0 )
-    		{      // sum of array == cost
+    		{      
     			this.num_gumballs-- ;
-    			this.all_quarters = true ; //remove all for arrary
-    			this.has_coins.empty() ;
-    			System.out.println( "Thanks for your coin.  Gumball Ejected!" ) ;
+    			this.all_quarters = true ; // reset to initial
+    			this.has_coins.clear() ;
+    			System.out.println( "Thanks for your coins.  Gumball Ejected!" ) ;
     		}
     		else
     		{
