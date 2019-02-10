@@ -20,3 +20,4 @@ springsource/Servers/.settings/org.eclipse.wst.server.core.prefs
 /jmonkey/JmeTests/build/
 /jmonkey/JmeTests/dist/
 *.bin
+/bin/
