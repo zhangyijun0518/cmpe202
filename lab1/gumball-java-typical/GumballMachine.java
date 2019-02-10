@@ -6,7 +6,7 @@ public class GumballMachine
     private int price_gumballs;
     private boolean all_quarters;
     private ArrayList<Integer> has_coins = new ArrayList<Integer>();
-    private boolean accept_coin;
+    private boolean accept_coin; //false if only accept quarter
 
     public GumballMachine( int size, int price, boolean type )
     {
