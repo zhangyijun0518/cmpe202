@@ -9,7 +9,7 @@ public class NotEnoughCoinState implements State {
   
     public void insertCoin(int coin) {
         gumballMachine.coins = gumballMachine.coins + coin;
-        System.out.println("You inserted a Coin");
+        System.out.println("You inserted "+ coin +" cents");
         if (gumballMachine.coins >= gumballMachine.price){
             gumballMachine.setState(gumballMachine.getHasEnoughCoinState());
         }
