@@ -3,6 +3,8 @@
 ### CRC Cards
 
 See [Din Tai Fung - CRC Cards.png]()
+
 {
+    
     Used State Pattern & Chain of Responsibility Pattern;
 }
