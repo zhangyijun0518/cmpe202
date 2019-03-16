@@ -25,9 +25,9 @@ Receipt:
   Order Number: 2 
 
   1   LBB                         5.59  
+      {{{{ BACON }}}} 
       TOMATO
-      LETTUCE 
-      {{{{ BACON }}}}                   
+      LETTUCE                  
       ->| JALA Grilled                  
       ->| G ONION                                                                                      
   1   LTL CAJ                     2.79  
