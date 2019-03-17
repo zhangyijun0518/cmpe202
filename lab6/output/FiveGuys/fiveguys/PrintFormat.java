@@ -4,10 +4,12 @@ import java.util.Date;
 import java.text.SimpleDateFormat;
 
 public class PrintFormat
-{
+{    
+    int width = 40;
+    
     public String lines(){
         String out = "";
-        for (int i = 0; i < 42; i++){
+        for (int i = 0; i < width; i++){
             out += "-";
         }
         out += "\n";
@@ -16,7 +18,8 @@ public class PrintFormat
     
     public String time(){
         return this.OnCenter(
-                new SimpleDateFormat("MM/d/yyyy hh:mm:ss").format(new Date());
+                new SimpleDateFormat("MM/d/yyyy hh:mm:ss").format(new Date())
+        );
     }
     
     public String Space(){
@@ -32,10 +35,12 @@ public class PrintFormat
     }
     
     public String OnCenter(String s){
-        
-    }
-    
-    public String OnRight(String s, double d){
-        
+        if (s.length()>= width)
+            return s;
+        int pad = width - s.length();
+        String out = "";
+        out += pad(pad/2) + s + pad(pad - pad/2);
+        out += "\n";
+        return out;
     }
 }

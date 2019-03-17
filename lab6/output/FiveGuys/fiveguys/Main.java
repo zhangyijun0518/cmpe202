@@ -5,7 +5,7 @@ public class Main
     public static void main(){
         BuildOrder order = new BuildOrder();
         
-        Burger burger = new Burger("  LBB",5.99);
+        Burger burger = new Burger("  LBB  ",5.99);
         burger.addToppings(new Toppings("BACON",Position.Bottom));
         burger.addToppings(new Toppings("LETTUCE",Position.Top));
         burger.addToppings(new Toppings("TOMATO",Position.Top));

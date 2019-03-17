@@ -24,12 +24,12 @@ Receipt:
                FIVE GUYS                
   Order Number: 2 
 
-  1   LBB                         5.59  
-      {{{{ BACON }}}} 
-      TOMATO
-      LETTUCE                  
-      ->| JALA Grilled                  
-      ->| G ONION                                                                                      
+  1     LBB                       5.59  
+       {{{{ BACON }}}} 
+       LETTUCE
+       TOMATO 
+       ->| G ONION                 
+       ->| JALA Grilled                                                                                                  
   1   LTL CAJ                     2.79  
                                         
       Sub. Total:                $8.38  
@@ -53,12 +53,12 @@ Packaging Slip:
                FIVE GUYS 
 
   Sandwich# 1                            
-  1   LBB                         5.59  
-      TOMATO                            
-      LETTUCE                           
-      ->| JALA Grilled                  
-      ->| G ONION                       
-      {{{{ BACON }}}}                   
+  1     LBB                       5.59  
+       LETTUCE
+       TOMATO 
+       ->| G ONION                                                      
+       ->| JALA Grilled                                      
+       {{{{ BACON }}}}                   
   1   LTL CAJ                     2.79  
   Register: 1     Tran Seq No:   57845  
   Cashier: Sakda* S.                    

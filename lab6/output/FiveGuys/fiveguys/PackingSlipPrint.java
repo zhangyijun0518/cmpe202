@@ -1,9 +1,11 @@
 package fiveguys;
 
+import java.util.ArrayList;
+
 public class PackingSlipPrint implements IPrintStrategy
 {
     private BuildOrder order;
-    private printFormat pf = new printFormat();
+    private PrintFormat pf = new PrintFormat();
     
     public PackingSlipPrint(BuildOrder newOrder){
         order = newOrder;
@@ -40,7 +42,15 @@ public class PackingSlipPrint implements IPrintStrategy
     
     protected String printOrderDetails(){
         String out = "";
-        out += order.
+        for (IOrderComponent component: order.getItemList()){
+            out += this.getItem(component);
+            if (component instanceof Burger){
+                ArrayList<Toppings> items = ((Burger) component).getToppingList();
+                out += this.getToppings(items, Position.Top);
+                out += this.getToppings(items, Position.onMeat);
+                out += this.getToppings(items, Position.Bottom);
+            }
+        }
         return out;
     };
     
@@ -50,23 +60,44 @@ public class PackingSlipPrint implements IPrintStrategy
         double change = order.getCash() - total;
         
         String out = "";
-        out += pf.pad(6) + "Sub. Total:" + pf.OnRight("", order.getTotal());
-        out += pf.pad(6) + "Tax:" + pf.OnRight("", tax);
-        out += pf.pad(6) + "Total:" + pf.OnRight("", total);
+        out += pf.pad(6) + "Sub. Total:" + pf.pad(16) + order.getTotal() + "\n";
+        out += pf.pad(6) + "Tax:" + pf.pad(16) + tax + "\n";
+        out += pf.pad(6) + "Total:" + pf.pad(23) + total + "\n";
         out += pf.Space();
-        out += pf.pad(6) + "Cash $20" + pf.OnRight("$", order.getCash());
-        out += pf.pad(6) + "Change" + pf.OnRight("$", change);
+        out += pf.pad(6) + "Cash $20"+ pf.pad(22) + "$" + order.getCash() + "\n";
+        out += pf.pad(6) + "Change" + pf.pad(20) + "$" + change;
         return out;
     };
     
     protected String printEnd(){
         String out = "";
-        out += "  Register:" + "1" + pf.OnRight("Tran Seq No:   ", 57845);
+        out += "  Register:" + "1" + pf.pad(5) + "Tran Seq No:   " + "57845" + "\n";
         out += "Cashier: Sakda* S.";
-        out += pf.onCenter("******************************");
-        out += pf.onCenter("Don't throw away your receipt!!!");
+        out += pf.OnCenter("************************************");
+        out += pf.OnCenter("Don't throw away your receipt!!!");
         out += pf.Space();
-        out += pf.onCenter("Help Five Guys and you could win!");
+        out += pf.OnCenter("Help Five Guys and you could win!");
         return out;
     };
+    
+    protected String getItem(IOrderComponent item){
+        String out = "";
+        out += pf.pad(2) + item.getCount();
+        out += pf.pad(3) + item.getDiscription();
+        out += pf.pad(21) + item.getPrice() + "\n";
+        return out;
+    }
+    
+    protected String getToppings(ArrayList<Toppings> items, Position pos){
+        String out = "";
+        for (Toppings item: items) {
+            if (item.getPosition() == pos){
+                out += pf.pad(7) + item.getDiscription();
+                out += "\n";
+            }
+        }
+        return out;
+    }
+    
+    
 }
