@@ -11,7 +11,7 @@
 ```
 Receipt:
 ----------------------------------------
-                FIVE GUYS                
+               FIVE GUYS                
             BURGER AND FRIES            
             STORE # CA-1294             
          5353 ALMADEN EXPY N60          
@@ -19,47 +19,47 @@ Receipt:
             (P) 408-274-9300            
 
 
-           3/16/2019 15:17:29    
+          03/16/2019 05:34:05           
 
                FIVE GUYS                
-  Order Number: 2 
-
-  1     LBB                       5.59  
-       {{{{ BACON }}}} 
+  Order Number: 3
+  1     LBB                       5.99
        LETTUCE
-       TOMATO 
-       ->| G ONION                 
-       ->| JALA Grilled                                                                                                  
-  1   LTL CAJ                     2.79  
-                                        
-      Sub. Total:                $8.38  
-      Tax:                       $0.75  
-      Total:                     $9.13  
-                                        
-      Cash                      $20.00  
-      Change                    $10.87  
-  Register: 1     Tran Seq No:   57845  
-  Cashier: Sakda* S.                    
-    **********************************       
-     Don't throw away your receipt!!!        
+       TOMATO
+       ->|G ONION
+       ->|JALA Grilled
+       {{{{ BACON }}}}
+  1   LTL CAJ                     2.79
+      Sub. Total:                 8.78
+      Tax:                        0.79
+      Total:                      9.57
 
-    Help Five Guys and you could win!                                   
+      Cash $20                  $20.00
+      Change                    $10.43
+  Register:1     Tran Seq No:    57845
+Cashier: Sakda* S.
+  ************************************  
+    Don't throw away your receipt!!!    
+
+   Help Five Guys and you could win!    
 ----------------------------------------
 
-Packaging Slip:
-----------------------------------------
-  Order Number: 2                      
-           3/16/2019 15:17:29           
-               FIVE GUYS 
 
-  Sandwich# 1                            
-  1     LBB                       5.59  
+Packing Slip:
+----------------------------------------
+  Order Number: 3
+          03/16/2019 05:34:05           
+               FIVE GUYS                
+
+
+  Sandwich# 1
+  1     LBB                       5.99
+       {{{{ BACON }}}}
        LETTUCE
-       TOMATO 
-       ->| G ONION                                                      
-       ->| JALA Grilled                                      
-       {{{{ BACON }}}}                   
-  1   LTL CAJ                     2.79  
-  Register: 1     Tran Seq No:   57845  
-  Cashier: Sakda* S.                    
+       TOMATO
+       ->|G ONION
+       ->|JALA Grilled
+  1   LTL CAJ                     2.79
+  Register:1     Tran Seq No:    57845
+  Cashier: Sakda* S.
 ----------------------------------------

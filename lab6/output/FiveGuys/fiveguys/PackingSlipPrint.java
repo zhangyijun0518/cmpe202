@@ -60,19 +60,19 @@ public class PackingSlipPrint implements IPrintStrategy
         double change = order.getCash() - total;
         
         String out = "";
-        out += pf.pad(6) + "Sub. Total:" + pf.pad(16) + order.getTotal() + "\n";
-        out += pf.pad(6) + "Tax:" + pf.pad(16) + tax + "\n";
-        out += pf.pad(6) + "Total:" + pf.pad(23) + total + "\n";
+        out += pf.pad(6) + "Sub. Total:" + pf.pad(17) + String.format("%.2f",order.getTotal()) + "\n";
+        out += pf.pad(6) + "Tax:" + pf.pad(24) + String.format("%.2f",tax) + "\n";
+        out += pf.pad(6) + "Total:" + pf.pad(22) + String.format("%.2f",total) + "\n";
         out += pf.Space();
-        out += pf.pad(6) + "Cash $20"+ pf.pad(22) + "$" + order.getCash() + "\n";
-        out += pf.pad(6) + "Change" + pf.pad(20) + "$" + change;
+        out += pf.pad(6) + "Cash $20"+ pf.pad(18) + "$" + String.format("%.2f",order.getCash()) + "\n";
+        out += pf.pad(6) + "Change" + pf.pad(20) + "$" + String.format("%.2f",change) +"\n";
         return out;
     };
     
     protected String printEnd(){
         String out = "";
-        out += "  Register:" + "1" + pf.pad(5) + "Tran Seq No:   " + "57845" + "\n";
-        out += "Cashier: Sakda* S.";
+        out += "  Register:" + "1" + pf.pad(5) + "Tran Seq No:    " + "57845" + "\n";
+        out += "Cashier: Sakda* S.\n";
         out += pf.OnCenter("************************************");
         out += pf.OnCenter("Don't throw away your receipt!!!");
         out += pf.Space();

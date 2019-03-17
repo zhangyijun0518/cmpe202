@@ -19,12 +19,12 @@ public class Main
         
         order.paid(20.00);
         
-        IPrintStrategy rp = new ReceiptPrint(order);
-        IPrintStrategy psp = new PackingSlipPrint(order);
+        ReceiptPrint rp = new ReceiptPrint(order);
+        PackingSlipPrint psp = new PackingSlipPrint(order);
         
         System.out.println("Receipt:");
-        rp.print();
+        System.out.println(psp.print());
         System.out.println("\nPacking Slip:");
-        psp.print();
+        System.out.println(rp.print());
     }
 }

@@ -23,7 +23,7 @@ public class ReceiptPrint implements IPrintStrategy
     
     protected String printHeader(){
         String out = "";
-        out += "  Order Number: " + order.getOrderNum();
+        out += "  Order Number: " + order.getOrderNum() + "\n";
         out += pf.time();
         out += pf.OnCenter("FIVE GUYS");
         out += pf.Space();
@@ -33,7 +33,7 @@ public class ReceiptPrint implements IPrintStrategy
     
     protected String printOrderDetails(){
         String out = "";
-        out += "Sandwich# 1\n";
+        out += "  Sandwich# 1\n";
         for (IOrderComponent component: order.getItemList()){
             out += this.getItem(component);
             if (component instanceof Burger)
@@ -45,8 +45,9 @@ public class ReceiptPrint implements IPrintStrategy
     
     protected String printEnd(){
         String out = "";
-        out += "  Register:" + "1" + pf.pad(5) + "Tran Seq No:   " + "57845" + "\n";
-        out += "Cashier: Sakda* S.";
+        out += "  Register:" + "1" + pf.pad(5) ;
+        out += "Tran Seq No:"+ pf.pad(4) + "57845" + "\n";
+        out += "  Cashier: Sakda* S.";
         out += "\n";
        return out;
     };
