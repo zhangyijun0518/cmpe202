@@ -23,8 +23,8 @@ public class Main
         PackingSlipPrint psp = new PackingSlipPrint(order);
         
         System.out.println("Receipt:");
-        System.out.println(psp.print());
-        System.out.println("\nPacking Slip:");
         System.out.println(rp.print());
+        System.out.println("\nPacking Slip:");
+        System.out.println(psp.print());
     }
 }

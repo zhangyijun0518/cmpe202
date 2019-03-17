@@ -19,16 +19,16 @@ Receipt:
             (P) 408-274-9300            
 
 
-          03/16/2019 05:34:05           
+          03/16/2019 05:40:29           
 
                FIVE GUYS                
   Order Number: 3
   1     LBB                       5.99
+       {{{{ BACON }}}}
        LETTUCE
        TOMATO
        ->|G ONION
        ->|JALA Grilled
-       {{{{ BACON }}}}
   1   LTL CAJ                     2.79
       Sub. Total:                 8.78
       Tax:                        0.79
@@ -37,7 +37,7 @@ Receipt:
       Cash $20                  $20.00
       Change                    $10.43
   Register:1     Tran Seq No:    57845
-Cashier: Sakda* S.
+  Cashier: Sakda* S.
   ************************************  
     Don't throw away your receipt!!!    
 
@@ -48,17 +48,17 @@ Cashier: Sakda* S.
 Packing Slip:
 ----------------------------------------
   Order Number: 3
-          03/16/2019 05:34:05           
+          03/16/2019 05:40:29           
                FIVE GUYS                
 
 
   Sandwich# 1
   1     LBB                       5.99
-       {{{{ BACON }}}}
        LETTUCE
        TOMATO
        ->|G ONION
        ->|JALA Grilled
+       {{{{ BACON }}}}
   1   LTL CAJ                     2.79
   Register:1     Tran Seq No:    57845
   Cashier: Sakda* S.
