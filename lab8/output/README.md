@@ -3,8 +3,10 @@
 ### Two pattens
 
 1. [Composite]     
-- The display of screen implemented by the display of three components (CreditCardNum, CreditCardExp, CreditCardCVC). 
-- There are space displayed between different components.
+- The display of screen implemented by the display of three components (CreditCardNum, CreditCardExp, CreditCardCVC);
+- There are spaces displayed between different components;
+- The display of CreditCardNum components contains the logic that a space will be added to display when it receives 4 or 8 or 12 digits;
+- The display of  CreditCardExp components contains the logic that a "/" will be added to display when it receives 2 digits;
 
 2. [Chain_of_Responsibility]
 - Three components are also the three handlers of the digit input event;    
