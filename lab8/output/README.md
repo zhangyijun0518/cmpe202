@@ -1,6 +1,7 @@
 # CMPE 202 - LAB #8 - Input Mask Design Patterns
 
-###Two pattens：
+### Two pattens
+
 1. [Composite]     
 - The display of screen implemented by the display of three components (CreditCardNum, CreditCardExp, CreditCardCVC). 
 - There are space displayed between different components.
