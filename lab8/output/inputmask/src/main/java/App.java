@@ -9,6 +9,8 @@ public class App {
     private CreditCardNum num;
     private CreditCardExp exp;
     private CreditCardCVC cvc;
+    private NumDecorator numDecor;
+    private ExpDecorator expDecor;
     private int count;
 
     public App() {
@@ -17,9 +19,11 @@ public class App {
         num = new CreditCardNum();
         exp = new CreditCardExp();
         cvc = new CreditCardCVC();
+        numDecor = new NumDecorator(num);
+        expDecor = new ExpDecorator(exp);
 
-        screen.addSubComponent(num);
-        screen.addSubComponent(exp);
+        screen.addSubComponent(numDecor);
+        screen.addSubComponent(expDecor);
         screen.addSubComponent(cvc);
 
         count = 0;
@@ -39,8 +43,15 @@ public class App {
     }
 
     public void key(String ch) {
-        count++;
-        screen.key(ch, count);
+        if (ch.matches("x|X") && count > 0){
+            count--;
+            screen.key(ch, count);
+        }
+        else if (ch.matches("\\d") && count < 23){
+            count++;
+            screen.key(ch, count);
+        }
+        System.err.print(count);
     }
 
 }

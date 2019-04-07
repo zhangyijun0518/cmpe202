@@ -2,13 +2,13 @@
 dependency1.from=NoCoinState
 dependency1.to=GumballMachine
 dependency1.type=UsesDependency
-dependency10.from=NotEnoughCoinState
+dependency10.from=Main
 dependency10.to=GumballMachine
 dependency10.type=UsesDependency
-dependency11.from=SoldOutState
+dependency11.from=NotEnoughCoinState
 dependency11.to=GumballMachine
 dependency11.type=UsesDependency
-dependency12.from=Main
+dependency12.from=SoldOutState
 dependency12.to=GumballMachine
 dependency12.type=UsesDependency
 dependency2.from=SoldState
