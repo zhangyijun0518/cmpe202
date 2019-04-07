@@ -1,6 +1,6 @@
 # CMPE 202 - LAB #8 - Input Mask Design Patterns
 
-### Two pattens
+### Three pattens
 
 1. [Composite]     
 - The display of screen implemented by the display of three components (CreditCardNum, CreditCardExp, CreditCardCVC);
@@ -12,7 +12,7 @@
 - When the num of digits received by CreditCardExp reaches 4, the event will be passed to the next handler which is  CreditCardCVC;    
 - When the num of digits received by CreditCardCVC reaches 3, no more handler to receive digit input.
 
-3. [Chain_of_Responsibility] - reverse
+   [Chain_of_Responsibility] - reverse
 - Reverse the handlers in chain to handle the backspace input event; 
    
 - When the num of digits the digit in CreditCardCVC become 0, the backspace event will be passed to the prev handler which is  CreditCardExp; 
