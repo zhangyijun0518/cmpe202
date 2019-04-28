@@ -13,7 +13,7 @@
 
 ### GumballMachineV2
 - **Model Tree**
-![image](https://github.com/zhangyijun0518/cmpe202/rawmaster/lab10/output/GM_v2_model.png)
+![image](https://github.com/zhangyijun0518/cmpe202/raw/master/lab10/output/GM_v2_model.png)
 - **Configurations & Output**
 ![image](https://github.com/zhangyijun0518/cmpe202/raw/master/lab10/output/GM_v2_config1.png)
 
