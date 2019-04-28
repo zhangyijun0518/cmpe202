@@ -3,26 +3,25 @@
 ## Feature Model Configs and Output
 ### GumballMachineV1
 - **Model Tree**
-<img width="350" height="350" src="https://github.com/zhangyijun0518/cmpe202/tree/master/lab10/output/GM_v1_model.png"/>
-![image](https://github.com/zhangyijun0518/cmpe202/tree/master/lab10/output/GM_v1_model.png)
+![image](https://github.com/zhangyijun0518/cmpe202/raw/master/lab10/output/GM_v1_model.png)
 - **Configurations & Output**
-![image](https://github.com/zhangyijun0518/cmpe202/tree/master/lab10/output/GM_v1_config1.png)
+![image](https://github.com/zhangyijun0518/cmpe202/raw/master/lab10/output/GM_v1_config1.png)
 
-![image](https://github.com/zhangyijun0518/cmpe202/tree/master/lab10/output/GM_v1_config2.png)
+![image](https://github.com/zhangyijun0518/cmpe202/raw/master/lab10/output/GM_v1_config2.png)
   
-![image](https://github.com/zhangyijun0518/cmpe202/tree/master/lab10/output/GM_v1_config3.png)
+![image](https://github.com/zhangyijun0518/cmpe202/raw/master/lab10/output/GM_v1_config3.png)
 
 ### GumballMachineV2
 - **Model Tree**
-![image](https://github.com/zhangyijun0518/cmpe202/tree/master/lab10/output/GM_v2_model.png)
+![image](https://github.com/zhangyijun0518/cmpe202/rawmaster/lab10/output/GM_v2_model.png)
 - **Configurations & Output**
-![image](https://github.com/zhangyijun0518/cmpe202/tree/master/lab10/output/GM_v2_config1.png)
+![image](https://github.com/zhangyijun0518/cmpe202/raw/master/lab10/output/GM_v2_config1.png)
 
-![image](https://github.com/zhangyijun0518/cmpe202/tree/master/lab10/output/GM_v2_config2.png)
+![image](https://github.com/zhangyijun0518/cmpe202/raw/master/lab10/output/GM_v2_config2.png)
   
-![image](https://github.com/zhangyijun0518/cmpe202/tree/master/lab10/output/GM_v2_config3.png)
+![image](https://github.com/zhangyijun0518/cmpe202/raw/master/lab10/output/GM_v2_config3.png)
 
-![image](https://github.com/zhangyijun0518/cmpe202/tree/master/lab10/output/GM_v2_config4.png)
+![image](https://github.com/zhangyijun0518/cmpe202/raw/master/lab10/output/GM_v2_config4.png)
 
 ## Compare with the original solution(Lab 1)
 ```
